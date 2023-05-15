@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import SideBar from './SideBar'
 import NavBar from './NavBar'
@@ -146,7 +148,7 @@ const Dashboard = () => {
                             <div className='bg-white flex-1 rounded-[20px] pt-[30px] pl-[40px]'>
                                 <div className='flex justify-between pr-[30px] text-[12px]'>
                                     <p className='text-[18px] font-bold '>Today’s schedule</p>
-                                    <a href='' className='text-[#858585] hover:text-black'>See All &gt;</a>
+                                    <a href='' className='text-[#2f2c2c] hover:text-black'>See All &gt;</a>
                                 </div>
                                 <div className='pt-[30px] flex flex-col gap-[10px]'>
                                     {noti.map((each) => {

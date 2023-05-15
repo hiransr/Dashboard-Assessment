@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import google_logo from '../Assets/google-color-svgrepo-com.svg'
 import apple_logo from '../Assets/apple-color-svgrepo-com.svg'
@@ -14,12 +17,6 @@ const Signup = () => {
         onSuccess: (codeResponse) => setUser(codeResponse),
         onError: (error) => console.log('Login Failed:', error)
     });
-    const responseMessage = (response) => {
-        console.log(response);
-    };
-    const errorMessage = (error) => {
-        console.log(error);
-    };
     useEffect(
         () => {
             if (profile) {
