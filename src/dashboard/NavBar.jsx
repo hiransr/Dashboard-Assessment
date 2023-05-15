@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
-import { GoSearch } from 'react-icons/go'
 import { IoMdNotifications } from 'react-icons/io'
 import profile from '../Assets/me.jpg'
 const NavBar = ({ pic }) => {
