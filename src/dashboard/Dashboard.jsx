@@ -115,7 +115,7 @@ const Dashboard = () => {
                     </div>
                     <div className='ml-[360px] gap-[40px] w-[calc(100vw-420px)] flex flex-col'>
                         <div className='pt-[60px] '>
-                            <NavBar pic={profile?.picture} />
+                            <NavBar pic={profile?.picture} name={profile?.given_name}/>
                         </div>
                         <div className='flex flex-row justify-between'>
                             {cardData.map((eachCard) => {

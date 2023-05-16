@@ -2,7 +2,8 @@
 import React from 'react'
 import { IoMdNotifications } from 'react-icons/io'
 import profile from '../Assets/me.jpg'
-const NavBar = ({ pic }) => {
+const NavBar = ({ pic, name }) => {
+    console.log(name)
     return (
         <div>
             <div className='flex items-center justify-between '>
@@ -11,6 +12,7 @@ const NavBar = ({ pic }) => {
                     <input type='text' name='search' id='search' placeholder='Search...' className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-[10px] text-[14px] flex items-center pl-2 h-[30px]' />
                     <IoMdNotifications size={18} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-black/60' />
                     <img src={pic ? pic : profile} alt='profile photo' className=' transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 rounded-[50%] h-[30px] w-[30px]' />
+                    <p className='text-[14px] font-semibold'>{name}</p>
                 </div>
             </div>
         </div>
